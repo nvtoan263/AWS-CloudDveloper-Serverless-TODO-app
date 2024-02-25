@@ -24,7 +24,7 @@ provider:
   environment:
     TODOS_TABLE: Todos-app-${self:provider.stage}
     TODOS_CREATED_AT_INDEX: CreatedAtIndex
-    S3_BUCKET_IMAGES: quangnn-c4-todo-images-${self:provider.stage}
+    S3_BUCKET_IMAGES: toannv15-c4-todo-images-${self:provider.stage}
     SIGNED_URL_EXPIRATION: 300
     PROJECT_NAME: todo-app-serverless
     INDEX_NAME: ${self:provider.environment.TODOS_CREATED_AT_INDEX}
