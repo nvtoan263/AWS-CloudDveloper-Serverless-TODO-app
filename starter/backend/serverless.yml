@@ -1,8 +1,6 @@
 # TODO: Change the name of the org 
-org: alan23
-app: serverless-app
 service: serverless-todo-app
-frameworkVersion: '3.37.0'
+frameworkVersion: '3'
 
 plugins:
   - serverless-iam-roles-per-function
@@ -12,7 +10,7 @@ plugins:
 
 provider:
   name: aws
-  runtime: nodejs14.x
+  runtime: nodejs16.x
 
   stage: ${opt:stage, 'dev'}
   region: ${opt:region, 'us-east-1'}
